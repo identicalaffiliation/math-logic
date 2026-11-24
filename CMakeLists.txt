@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.0)
+project(mlcw LANGUAGES C CXX)
+set(BUDDY_EXAMPLES OFF)
+add_subdirectory(external/buddy)
+add_executable(mlcw main.cpp)
+target_link_libraries(mlcw PRIVATE buddy)
